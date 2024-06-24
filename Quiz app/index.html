@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar"> 
+        <p>QUIZZY</p>
+        <div class="menu">
+           <button id="signInButton">Sign In</button>
+        </div>
+    </nav>
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign In</h2>
+            <form id="signInForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+<div class="app">
+    <h1>Simple Quiz</h1>
+    <div class="quiz">
+        <h2 id="question">Question goes here....</h2>
+        <div id="answer-buttons">
+        </div>
+        <button id="next-btn">Next</button>
+      
+
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
